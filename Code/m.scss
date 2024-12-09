@@ -1,0 +1,306 @@
+$text-color: #ffffff;  
+$header-color: #FF8FAB;
+$hover-color: #FFB3C6;
+$font-family: 'Arial, sans-serif';
+$writing-secondary: italic;
+$writing-logo: 'Brush Script MT', cursive;
+$spacing: 1rem;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: $header-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: $text-color;
+    font-family: $writing-logo;
+    font-size: xx-large;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: $hover-color;
+      }
+    }
+  }
+
+  .nav {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          text-decoration: none;
+          color: $text-color;
+          font-size: xx-large;
+          transition: color 0.3s;
+          font-family: $writing-logo;
+          &:hover {
+            color: $hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: $hover-color;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: $text-color;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: $hover-color;
+    color: white;
+}
+body{
+    background-image:url(../img\ and\ video/stars.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.custom-carousel {
+    .carousel-inner {
+      .custom-slide {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        height: 60vh; 
+  
+        .carousel-caption {
+          position: absolute;
+          top: 50%;
+          right: 10%;
+          transform: translateY(-50%);
+          color: white;
+          text-align: right;
+  
+          .carousel-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+  
+          .carousel-description {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+          }
+  
+          .carousel-button {
+            background-color: pink;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: white;
+  
+            &:hover {
+              background-color: #ff66b2;
+            }
+          }
+        }
+      }
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+  }
+.container-fluid-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding-top: 50px;}
+h1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+        color: $hover-color;
+        font-family: $writing-logo;
+        font-size: 80px;
+        text-decoration-line: underline;
+        align-items: center;
+    }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: $hover-color;
+    gap: 80px; 
+}
+.col{
+    flex: 1;
+    margin: 0 $spacing;
+    padding: 1rem;
+    background-color: $hover-color;
+    color: $text-color;
+    text-align: center;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col p{
+    align-items: center;
+    font-family: $writing-secondary;
+    color: white;
+    font-size: x-large;
+}
+.col button{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: $text-color;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.col img{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+.col a{
+    text-decoration: none;
+    font-family: $writing-secondary;
+    font-size: larger;
+    color: white;
+}
+footer{
+    background-color: $header-color;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+    color: $text-color;
+}
+.socialIcons{
+    text-decoration: none;
+    padding:  10px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: white;
+    opacity: 0,9;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  @media screen and (max-width: 1024px) {
+    .header {
+      flex-wrap: wrap;
+  
+      .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+  
+      .nav {
+        ul {
+          flex-wrap: wrap;
+          justify-content: center;
+  
+          li {
+            margin: 0.5rem 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+  
+      .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+  
+      .nav {
+        ul {
+          flex-direction: column;
+          align-items: center;
+  
+          li {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
